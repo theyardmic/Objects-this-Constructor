@@ -2,12 +2,12 @@
 function Token (token_name, token_id, token_category) {
 
    // assigning  parameter values to the calling object
-    this.name = person_name,
-    this.age = person_age,
-    this.gender = person_gender,
+    this.name = token_name,
+    this.id = token_id,
+    this.category = token_category,
 
-    this.greet = function () {
-        return ('Hi' + ' ' + this.name);
+    this.details = function () {
+        return ('Hi.Your Token is' + ' ' + this.name);
     }
 }
 
