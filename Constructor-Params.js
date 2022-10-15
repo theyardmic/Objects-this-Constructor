@@ -7,15 +7,15 @@ function Token (token_name, token_id, token_category) {
     this.category = token_category,
 
     this.details = function () {
-        return ('Hi.Your Token is' + ' ' + this.name);
+        return ('Hi.Your Token is ${this.name}, with the ID of ${this.id} and its ${this.category}');
     }
 }
 
 
 // creating objects
-const person1 = new Person('John', 23, 'male');
-const person2 = new Person('Sam', 25, 'female');
+const Token1 = new Token('BAYC', 23, 'png');
+const Token2 = new Token('Crypto-Punk', 25, 'pixelated');
 
 // accessing properties
-console.log(person1.name); // "John"
-console.log(person2.name); // "Sam"
+console.log(Token1.details); 
+
