@@ -1,17 +1,21 @@
 // constructor function
-function Person () {
-    this.name = 'John',
-    this.age = 23,
+function Token (token_name, token_id, token_category) {
 
-     this.greet = function () {
-        console.log('hello');
+   // assigning  parameter values to the calling object
+    this.name = person_name,
+    this.age = person_age,
+    this.gender = person_gender,
+
+    this.greet = function () {
+        return ('Hi' + ' ' + this.name);
     }
 }
 
-// create objects
-const person1 = new Person();
-const person2 = new Person();
 
-// access properties
-console.log(person1.name);  // John
-console.log(person2.name);  // John
+// creating objects
+const person1 = new Person('John', 23, 'male');
+const person2 = new Person('Sam', 25, 'female');
+
+// accessing properties
+console.log(person1.name); // "John"
+console.log(person2.name); // "Sam"
